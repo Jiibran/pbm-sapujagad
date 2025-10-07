@@ -22,10 +22,19 @@ A professional Flutter monorepo for SapuJagad, containing three main modules:
    - `cd tasker_app ; flutter pub get`
    - `cd admin_dashboard ; flutter pub get` (and enable web: `flutter config --enable-web` if needed)
 
-## Run
-- User App: `cd user_app ; flutter run`
-- Tasker App: `cd tasker_app ; flutter run`
-- Admin Dashboard (web): `cd admin_dashboard ; flutter run -d chrome`
+## Run & Preview the Apps
+
+You can launch each experience locally to inspect the UI and behaviour:
+
+1. Make sure you have at least one Flutter device available (`flutter devices`).
+   - For mobile, start an Android emulator or connect a physical device with USB debugging enabled.
+   - For the web dashboard, ensure `flutter config --enable-web` has been executed once, and Chrome is installed.
+2. From the repo root, run the desired target:
+   - **User App (mobile)**: `cd user_app && flutter run`
+   - **Tasker App (mobile)**: `cd tasker_app && flutter run`
+   - **Admin Dashboard (web)**: `cd admin_dashboard && flutter run -d chrome`
+
+Flutter hot-reload/hot-restart works as usual, so changes to the Dart code will be reflected immediately while the command is running.
 
 ## Testing
 - Run tests per module, e.g. `cd shared_services ; dart test` or `cd user_app ; flutter test`.
