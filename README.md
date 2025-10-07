@@ -36,6 +36,10 @@ You can launch each experience locally to inspect the UI and behaviour:
 
 Flutter hot-reload/hot-restart works as usual, so changes to the Dart code will be reflected immediately while the command is running.
 
+### Importing the Monorepo on Zapp
+
+Zapp expects a single Flutter project at the repository root. Because this workspace is a Melos monorepo, the included `zapp.yaml` file lists each app directory. When you import the repository into Zapp you can pick the `user_app`, `tasker_app`, or `admin_dashboard` targets from the project selector without extra configuration.
+
 ## Testing
 - Run tests per module, e.g. `cd shared_services ; dart test` or `cd user_app ; flutter test`.
 

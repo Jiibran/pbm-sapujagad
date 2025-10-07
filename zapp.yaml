@@ -1,0 +1,14 @@
+version: 1
+# Explicitly list every Flutter project so Zapp can import the monorepo.
+projects:
+  user_app:
+    projectPath: user_app
+    description: SapuJagad consumer experience
+  tasker_app:
+    projectPath: tasker_app
+    description: Tasker operations app
+  admin_dashboard:
+    projectPath: admin_dashboard
+    description: Web dashboard for administrators
+# Pick the mobile user app when the repo is imported without further input.
+defaultProject: user_app
