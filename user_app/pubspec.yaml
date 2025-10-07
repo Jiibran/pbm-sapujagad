@@ -1,5 +1,5 @@
 name: user_app
-description: SapuJagad: Pesan & Bersih (User App)
+description: 'SapuJagad: Pesan & Bersih (User App)'
 publish_to: 'none'
 version: 0.1.0+1
 environment:
