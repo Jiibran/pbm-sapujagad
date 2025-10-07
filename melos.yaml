@@ -1,0 +1,13 @@
+name: sapujagad
+packages:
+  - shared_models
+  - shared_services
+  - shared_ui
+  - user_app
+  - tasker_app
+  - admin_dashboard
+
+scripts:
+  pub:get: "melos exec -- flutter pub get || dart pub get"
+  analyze: "melos exec -- dart analyze ."
+  test: "melos exec -- (flutter test || dart test)"
